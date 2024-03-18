@@ -1,5 +1,4 @@
-r"""
-Sequences (:mod:`skbio.sequence`)
+r"""Sequences (:mod:`skbio.sequence`)
 =================================
 
 .. currentmodule:: skbio.sequence
@@ -295,7 +294,8 @@ Class-level methods contain information about the molecule types.
 >>> sorted(RNA.degenerate_map['B'])
 ['C', 'G', 'U']
 
-"""
+
+"""  # noqa: D205, D415
 
 # ----------------------------------------------------------------------------
 # Copyright (c) 2013--, scikit-bio development team.
@@ -313,5 +313,12 @@ from ._genetic_code import GeneticCode
 from ._grammared_sequence import GrammaredSequence
 from ._substitution import SubstitutionMatrix
 
-__all__ = ['Sequence', 'Protein', 'DNA', 'RNA', 'GeneticCode',
-           'GrammaredSequence', 'SubstitutionMatrix']
+__all__ = [
+    "Sequence",
+    "Protein",
+    "DNA",
+    "RNA",
+    "GeneticCode",
+    "GrammaredSequence",
+    "SubstitutionMatrix",
+]
